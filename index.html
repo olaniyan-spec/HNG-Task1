@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG Task one</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class='container' id="data" data-name="Tofunmi" data-image="tofunmi.jpg" data-Day-of-the-week="Thursday" data-time="17:55 GMT" data-track="frontend" data-url="https:/github.com/Olaniyan-spec" >
+        <h2>Slack Name: Tofunmi</h2>
+        <img src="tofunmi.jpeg" width="100px" alt="Olaniyan Tofunmi Olaoluwa">
+        <p>Current Day of the week: Thursday</p>
+        <p>Current UTC time: 17:55 GMT</p>
+        <p>Track: Frontend</p>
+       Github url:  <a href="https://github.com/Olaniyan-spec">Github url</a>   
+
+    </div>
+
+    <script>
+        const div = document.getElementById('data')
+
+        console.log(div.dataset);
+
+
+    </script>
+
+</body>
+</html>
