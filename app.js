@@ -4,7 +4,7 @@ const UTC = ()=>{
 }
 
 function currentDay(){
-    const days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     const date = new Date();
     const currentDay = days[date.getUTCDay()];
     return currentDay;
