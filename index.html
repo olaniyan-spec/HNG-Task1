@@ -6,24 +6,49 @@
     <title>HNG Task one</title>
 
     <style>
-        body{
-            padding: 0;
-            margin: 0;
+        *{
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .container{
+          background-color: #735634;
+          width: 350px;
+          border-radius: 2rem;
+          color: #fff;
+          
+        
+        }
+        .image img{
+            width: 350px;
+            object-fit: cover;
+            border-radius: 2rem;
+            height: 300px;
+        }
+        .content{
+            padding: 1rem;
+        }
+        a{
+          color: white;
+            
         }
     </style>
 </head>
 <body>
-    <div class='container' id="data" data-name="Tofunmi" data-image="tofunmi.jpg" data-Day-of-the-week="Thursday" data-time="17:55 GMT" data-track="frontend" data-url="https:/github.com/Olaniyan-spec" >
-        <h2>Slack Name: Tofunmi</h2>
-        <img src="tofunmi.jpeg" width="100px" alt="Olaniyan Tofunmi Olaoluwa">
-        <p>Current Day of the week: Thursday</p>
-        <p>Current UTC time: 17:55 GMT</p>
-        <p>Track: Frontend</p>
-       Github url:  <a href="https://github.com/olaniyan-spec/HNG-Task1">Github url</a>   
-
+ <div class="container">
+    <div class="image">
+        <img src="tofunmi.jpeg" alt="Tofunmi" data-testid="slackDisplayImage">
     </div>
+    <div class="content">
+        <h1 data-testid="slackUserName">Tofunmi</h1>
+        <p data-testid="currentDayofTheWeek">Friday</p>
+        <p data-testid="currentUTCTime" id="time">TIME</p>
+        <p data-testid="myTrack">Frontend</p>
+        <a href="https://github.com/olaniyan-spec/HNG-Task1" data-testid="githubURL">Github</a>
+    </div>
+ </div>
 
-   
+<script src="app.js"></script>   
 
 </body>
 </html>
