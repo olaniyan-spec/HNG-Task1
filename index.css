@@ -1,0 +1,26 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+  background-color: #735634;
+  width: 350px;
+  border-radius: 2rem;
+  color: #fff;
+  
+
+}
+.image img{
+    width: 350px;
+    object-fit: cover;
+    border-radius: 2rem;
+    height: 300px;
+}
+.content{
+    padding: 1rem;
+}
+a{
+  color: white;
+    
+}

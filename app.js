@@ -1,11 +1,17 @@
 const UTC = ()=>{
-    const now = new Date();
-    const hours= now.getUTCHours().toString().padStart(2, '0');
-    const minutes= now.getUTCMinutes().toString().padStart(2, '0');
-    const seconds = now.getUTCSeconds().toString().padStart(2, '0');
-    const milliseconds = now.getUTCMilliseconds().toString().padStart(2, '0');
-    const format = `${hours} ${minutes}:${seconds}:${milliseconds}`
-    document.getElementById('time').textContent = format
+    const now = Date.now()
+    return now;
 }
-UTC();
-setInterval(UTC, 100)
+
+function currentDay(){
+    const days = ['sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    const date = new Date();
+    const currentDay = days[date.getUTCDay()];
+    return currentDay;
+} 
+
+
+const Today = document.getElementById('day');
+const time = document.getElementById('time')
+Today.textContent = currentDay();
+time.textContent = UTC();
